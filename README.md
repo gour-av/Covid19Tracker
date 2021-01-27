@@ -26,7 +26,8 @@ Example - USA ( State - California - Death Rate - 1389707,Recovered Rate - 13977
                      annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
   ###### ViewModel - 
                          implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-    ###### CountryCodePicker - 
+   
+   ###### CountryCodePicker - 
                            implementation 'com.hbb20:ccp:2.4.0'
 
 # Permissions
