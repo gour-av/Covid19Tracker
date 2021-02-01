@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".activities.MainActivity">
+  <!-- <RelativeLayout
+       android:layout_width="410dp"
+       android:layout_height="270dp"
+       android:id="@+id/tool"
+      android:background="@drawable/custom">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:src="@drawable/ic_notification"
+       android:layout_alignParentEnd="true"
+         android:layout_marginEnd="27px"
+         android:layout_marginTop="34px"/>
+     <View
+         android:layout_width="40px"
+         android:layout_height="3px"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+         android:layout_marginStart="27px"
+        android:id="@+id/view_line_1"/>
+      <View
+          android:layout_width="30px"
+          android:layout_height="3px"
+          android:background="@android:color/white"
+          android:layout_below="@id/view_line_1"
+          android:layout_marginTop="8px"
+          android:layout_marginStart="27px"
+          android:id="@+id/view_line_2"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_below="@id/view_line_2"
+         android:text="Covid-19"
+         android:textSize="20dp"
+         android:layout_marginTop="65dp"
+         android:layout_marginStart="27px"
+         android:textStyle="bold"
+          android:id="@+id/tv_title"
+         android:textColor="@android:color/white"/>
+
+   <com.hbb20.CountryCodePicker
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:ccp_showFullName="true"
+       app:ccp_showPhoneCode="false"
+        android:layout_marginTop="80dp"
+      android:layout_alignParentEnd="true"
+       android:id="@+id/country_code_picker"
+       android:clickable="true"
+       android:layout_marginEnd="30dp"
+       android:background="@drawable/rectangle"
+       android:focusable="true" />
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/fl_container"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_title"
+          android:text="Are you feeling sick?"
+          android:textSize="20dp"
+          android:layout_marginTop="47px"
+          android:layout_marginStart="27px"
+          android:textStyle="bold"
+            android:id="@+id/tv_sick"
+          android:textColor="@android:color/white"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_sick"
+          android:text="If you feeling sick of any covid-19 symptoms"
+          android:textSize="12dp"
+          android:layout_marginTop="40px"
+          android:layout_marginStart="27px"
+          android:textStyle="bold"
+          android:id="@+id/tv_msg_1"
+
+          android:textColor="@android:color/darker_gray"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_msg_1"
+          android:text="please call or SMS us immediately for help"
+          android:textSize="12dp"
+          android:layout_marginTop="5px"
+          android:layout_marginStart="27px"
+          android:textStyle="bold"
+          android:id="@+id/tv_msg_2"
+
+          android:textColor="@android:color/darker_gray"/>
+      <TextView
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_msg_2"
+          android:text="Call Now"
+          android:textSize="40px"
+          android:layout_marginTop="20dp"
+       android:textAlignment="center"
+          android:id="@+id/tv_call"
+          android:layout_marginStart="30dp"
+
+            android:textColor="@android:color/white"
+          android:background="@drawable/call"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_msg_2"
+           android:src="@drawable/ic_vector__3_"
+           android:layout_marginTop="26dp"
+
+           android:layout_marginStart="40dp"/>
+       <TextView
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_msg_2"
+           android:text="Send SMS"
+           android:textSize="40px"
+           android:layout_marginTop="20dp"
+           android:textAlignment="center"
+           android:id="@+id/tv_sms"
+           android:layout_marginStart="30dp"
+           android:layout_toRightOf="@id/tv_call"
+
+           android:textColor="@android:color/white"
+           android:background="@drawable/sms"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_msg_2"
+           android:src="@drawable/ic_msg"
+           android:layout_marginTop="26dp"
+             android:layout_toRightOf="@id/tv_call"
+           android:layout_marginStart="40dp"/>
+
+   </RelativeLayout>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Prevention"
+       android:layout_below="@id/tool"
+       android:textSize="15dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="5dp"
+       android:textColor="#0D1333"
+       android:id="@+id/tv_prevention"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prevention"
+        android:src="@drawable/avoid"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/img_avoid"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prevention"
+        android:src="@drawable/clean"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_avoid"
+        android:layout_marginStart="15dp"
+        android:id="@+id/img_clean"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prevention"
+        android:src="@drawable/mask"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_clean"
+        android:layout_marginStart="40dp"
+        android:id="@+id/img_wear"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avoid"
+        android:text="Avoid close"
+           android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:id="@+id/tv_close"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close"
+        android:text="contact"
+             android:textStyle="bold"
+        android:layout_marginStart="40dp"
+        android:id="@+id/tv_contact"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avoid"
+        android:text="Clean your"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_close"
+        android:layout_marginStart="30dp"
+        android:id="@+id/tv_yours"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_yours"
+        android:text="hands often"
+        android:textStyle="bold"
+      android:layout_toRightOf="@id/tv_close"
+        android:layout_marginStart="30dp"
+        android:id="@+id/tv_hands"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avoid"
+        android:text="Wear a"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_yours"
+        android:layout_marginStart="60dp"
+        android:id="@+id/tv_wear"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_yours"
+        android:text="facemask"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_hands"
+        android:layout_marginStart="55dp"
+        android:id="@+id/tv_face"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/img_avoid"
+        android:src="@drawable/safety"
+
+       android:layout_centerHorizontal="true"
+
+        android:id="@+id/img_safety"/>-->
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_home"
+        android:id="@+id/img_home"
+        android:layout_marginStart="15dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_bar_chart"
+        android:id="@+id/img_bar_chart"
+        android:layout_toRightOf="@id/img_home"
+        android:layout_marginStart="70dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_chart"
+        android:id="@+id/img_chart"
+       android:layout_marginStart="200dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_i"
+        android:id="@+id/img_help"
+       android:layout_marginStart="80dp"
+       android:layout_toRightOf="@id/img_chart"/>
+
+
+-->
+
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginTop="670dp"
+
+        android:id="@+id/parent_tab_layout"/>
+  &lt;!&ndash;  app:tabIndicator="@drawable/tab_custom"&ndash;&gt;
+  <androidx.viewpager.widget.ViewPager
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/parent_view_pager"/>
+-->
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/frame1"
+      android:layout_above="@id/btm_navigation"/>
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/btm_navigation"
+      android:layout_width="match_parent"
+      android:layout_alignParentBottom="true"
+      app:itemIconSize="15dp"
+      android:layout_height="wrap_content"
+      app:menu="@menu/navigation_menu"
+      />
+
+
+
+
+</RelativeLayout>
