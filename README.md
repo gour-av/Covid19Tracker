@@ -29,6 +29,12 @@ Example - USA ( State - California - Death Rate - 1389707,Recovered Rate - 13977
    
    ###### CountryCodePicker - 
                            implementation 'com.hbb20:ccp:2.4.0'
+         
+         
+   ###### Room Database   - 
+                           implementation 'androidx.room:room-runtime:2.2.5'
+                           annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
 
 # Permissions
 ###### Full Network Access
