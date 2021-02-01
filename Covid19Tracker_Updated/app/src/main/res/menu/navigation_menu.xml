@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+
+        app:showAsAction="ifRoom" />
+    <!--  android:iconTint ="@drawable_state_custom"-->
+    <item
+        android:id="@+id/action_static"
+        android:enabled="true"
+        android:title="Statistics"
+        android:icon="@drawable/ic_bar_chart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_book"
+        android:enabled="true"
+        android:title="Chart"
+        android:icon="@drawable/ic_chart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_help"
+        android:enabled="true"
+        android:title="Help"
+        android:icon="@drawable/ic_i"
+        app:showAsAction="ifRoom" />
+   <!-- <item
+        android:id="@+id/action_info"
+        android:enabled="true"
+        android:title="info"
+        app:showAsAction="ifRoom" />-->
+
+
+</menu>

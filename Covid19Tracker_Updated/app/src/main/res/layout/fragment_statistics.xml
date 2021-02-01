@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/statistics_custom"
+    tools:context=".navfragments.StatisticsFragment">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27px"
+        android:layout_marginTop="34px"/>
+    <View
+        android:layout_width="40px"
+        android:layout_height="3px"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="27px"
+        android:id="@+id/view_line_3"/>
+    <View
+        android:layout_width="30px"
+        android:layout_height="3px"
+        android:background="@android:color/white"
+        android:layout_below="@id/view_line_3"
+        android:layout_marginTop="8px"
+        android:layout_marginStart="27px"
+        android:id="@+id/view_line_4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line_4"
+        android:text="Statistics"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="27px"
+        android:textStyle="bold"
+        android:id="@+id/tv_title_statistics"
+        android:textColor="@android:color/white"/>
+
+           <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="320dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/state_custom"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicator="@drawable/tab_custom"
+        app:tabIndicatorColor="#FF4D58"
+        app:tabTextColor="@color/white"
+
+        android:layout_below="@id/tv_title_statistics"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"/>
+  <!-- <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="410dp"
+                android:layout_height="410dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginStart="20dp"
+                    android:text="Daily New Cases"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/flag_afghanistan"/>
+
+
+
+            </RelativeLayout>
+       </LinearLayout>
+
+   </ScrollView>
+
+-->
+
+
+
+</RelativeLayout>
